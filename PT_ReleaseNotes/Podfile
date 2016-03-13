@@ -1,0 +1,27 @@
+platform :osx, "10.9"
+
+
+pod 'AFNetworking'
+pod 'CocoaLumberjack'
+pod "XCDLumberjackNSLogger", "~> 1.0.2"
+pod "AFNetworkActivityLogger"
+pod 'NSLogger'
+pod 'SSKeychain'
+pod 'Sparkle', '~> 1.10'
+pod "HockeySDK-Mac"
+pod 'CocoaSecurity'
+
+# development only
+
+pod 'NSColor-Pantone'
+pod 'NSColor-Crayola'
+
+#help find ui freeze https://github.com/maxgordeev/MGWatchdog
+pod "MGWatchdog"
+pod "DMTime", :git => 'https://github.com/sdevore/DMTime.git'
+
+
+target :PT_ReleaseNotesTests, :exclusive => true do
+    pod 'OHHTTPStubs'
+
+end
