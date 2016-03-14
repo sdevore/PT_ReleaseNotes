@@ -1,1 +1,0 @@
-../../../NSColor-Pantone/Source/NSColor+Pantone.h
