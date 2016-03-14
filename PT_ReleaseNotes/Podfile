@@ -9,7 +9,6 @@ pod 'NSLogger'
 pod 'SSKeychain'
 pod 'Sparkle', '~> 1.10'
 pod "HockeySDK-Mac"
-pod 'CocoaSecurity'
 
 # development only
 

@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="PT_ReleaseNotes" type="AppleRunConfiguration" factoryName="Application" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" PROJECT_NAME="PT_ReleaseNotes" TARGET_NAME="PT_ReleaseNotes" CONFIG_NAME="Debug" SCHEME_NAME="PT_ReleaseNotes" RUN_TARGET_PROJECT_NAME="PT_ReleaseNotes" RUN_TARGET_NAME="PT_ReleaseNotes" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+    <envs />
+    <EXTENSION ID="org.jetbrains.appcode.reveal.RevealRunConfigurationExtension">
+      <REVEAL_SETTINGS autoInject="false" autoInstall="true" askToEnableAutoInstall="true" />
+    </EXTENSION>
+    <method />
+  </configuration>
+</component>
