@@ -8,84 +8,41 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PTProject : NSObject
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  public;
+@class PTTimeZone;
 
-/** <#description#> */
-@property (nonatomic, copy) NSString* week_start_day;
+@interface PTProject : NSObject <NSCoding, NSCopying>
 
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  account_id;
+@property (nonatomic, assign) BOOL publicProperty;
+@property (nonatomic, strong) NSString *weekStartDay;
+@property (nonatomic, assign) BOOL enableFollowing;
+@property (nonatomic, assign) BOOL atomEnabled;
+@property (nonatomic, strong) NSString *startTime;
+@property (nonatomic, assign) double numberOfDoneIterationsToShow;
+@property (nonatomic, strong) NSString *projectType;
+@property (nonatomic, strong) NSString *updatedAt;
+@property (nonatomic, assign) BOOL hasGoogleDomain;
+@property (nonatomic, assign) BOOL bugsAndChoresAreEstimatable;
+@property (nonatomic, strong) NSString *kind;
+@property (nonatomic, assign) double version;
+@property (nonatomic, assign) BOOL automaticPlanning;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, assign) double internalBaseClassIdentifier;
+@property (nonatomic, strong) NSString *pointScale;
+@property (nonatomic, strong) NSString *profileContent;
+@property (nonatomic, assign) double velocityAveragedOver;
+@property (nonatomic, assign) double iterationLength;
+@property (nonatomic, strong) PTTimeZone *timeZone;
+@property (nonatomic, assign) double accountId;
+@property (nonatomic, assign) double currentIterationNumber;
+@property (nonatomic, strong) NSString *createdAt;
+@property (nonatomic, assign) double initialVelocity;
+@property (nonatomic, assign) BOOL enableIncomingEmails;
+@property (nonatomic, assign) BOOL pointScaleIsCustom;
+@property (nonatomic, assign) BOOL enableTasks;
+@property (nonatomic, strong) NSString *internalBaseClassDescription;
 
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  current_iteration_number;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  enable_following;
-
-/** <#description#> */
-@property (nonatomic, copy) NSString* project_type;
-
-/** <#description#> */
-@property (nonatomic, copy) NSString* updated_at;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  has_google_domain;
-
-/** <#description#> */
-@property (nonatomic, copy) NSString* kind;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  bugs_and_chores_are_estimatable;
-
-/** <#description#> */
-@property (nonatomic, copy) NSString* name;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  version;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  automatic_planning;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  Id;
-
-/** <#description#> */
-@property (nonatomic, copy) NSString* point_scale;
-
-/** <#description#> */
-@property (nonatomic, copy) NSString* profile_content;
-
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  iteration_length;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  velocity_averaged_over;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  enable_incoming_emails;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  atom_enabled;
-
-/** <#description#> */
-@property (nonatomic, copy) NSString* start_time;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  number_of_done_iterations_to_show;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  initial_velocity;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  point_scale_is_custom;
-
-/** <#description#> */
-@property (nonatomic, assign) NSInteger  enable_tasks;
-
-/** <#description#> */
-@property (nonatomic, copy) NSString* created_at;
++ (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
+- (NSDictionary *)dictionaryRepresentation;
 
 @end

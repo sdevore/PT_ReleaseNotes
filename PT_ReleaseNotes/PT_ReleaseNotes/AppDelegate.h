@@ -10,6 +10,8 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
++ (nonnull NSURLSession *)sharedSession;
 
+- (IBAction)showFeedbackDialog:(nullable id)sender;
+- (IBAction)startActivationProcess:(id)sender;
 @end
-

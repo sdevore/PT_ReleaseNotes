@@ -7,9 +7,9 @@ pod "XCDLumberjackNSLogger", "~> 1.0.2"
 pod "AFNetworkActivityLogger"
 pod 'NSLogger'
 pod 'SSKeychain'
-pod 'Sparkle', '~> 1.10'
-pod "HockeySDK-Mac"
-
+# pod 'Sparkle', '~> 1.10'
+# pod "HockeySDK-Mac"
+pod 'DevMateKit'
 # development only
 
 pod 'NSColor-Pantone'

@@ -18,6 +18,7 @@
 #import "PTProjects.h"
 #import "PTStories.h"
 #import "PTStory.h"
+#import "PTTimeZone.h"
 #import "PTUser.h"
 #import "PTUsers.h"
 #endif /* PTClasses_h */

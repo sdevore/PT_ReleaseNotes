@@ -27,6 +27,12 @@
     NSString *apiKey = [dc stringForKey:kAPIKey];
     if (nil != apiKey) {
         self.account = [PTAccount accountWithApiKey:apiKey];
+        [self.account me:^(BOOL completed, PTProjects *_Nullable projects) {
+            DDLogVerbose(@"projects: %@", projects);
+        }
+            failure:^(NSError *_Nullable error) {
+                [[NSAlert alertWithError:error] runModal];
+            }];
         [self.account getProjects:^(BOOL completed, PTProjects *_Nullable projects) {
             DDLogVerbose(@"projects: %@", projects);
         }

@@ -8,7 +8,21 @@
 
 #import <Foundation/Foundation.h>
 
-@interface PTEpic : NSObject
+@class PTLabel;
 
+@interface PTEpic : NSObject <NSCoding, NSCopying>
 
+@property (nonatomic, strong) NSString *updatedAt;
+@property (nonatomic, strong) NSString *url;
+@property (nonatomic, assign) double internalBaseClassIdentifier;
+@property (nonatomic, strong) NSString *createdAt;
+@property (nonatomic, strong) PTLabel *label;
+@property (nonatomic, strong) NSString *kind;
+@property (nonatomic, strong) NSString *internalBaseClassDescription;
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, assign) double projectId;
+
++ (instancetype)modelObjectWithDictionary:(NSDictionary *)dict;
+- (instancetype)initWithDictionary:(NSDictionary *)dict;
+- (NSDictionary *)dictionaryRepresentation;
 @end

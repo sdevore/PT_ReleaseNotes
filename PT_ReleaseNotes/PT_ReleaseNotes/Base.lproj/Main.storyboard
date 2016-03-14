@@ -632,6 +632,24 @@
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
                                         </menuItem>
+                                        <menuItem title="Check for Updates" id="1Fk-9m-g53">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="checkForUpdates:" target="sV1-KM-bXU" id="8qv-fW-b60"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Send Feedback" id="y0M-xm-il3">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="showFeedbackDialog:" target="Voe-Tx-rLC" id="Qc5-D7-GoT"/>
+                                            </connections>
+                                        </menuItem>
+                                        <menuItem title="Activate" state="on" id="RQX-U4-4TV">
+                                            <modifierMask key="keyEquivalentModifierMask"/>
+                                            <connections>
+                                                <action selector="startActivationProcess:" target="Voe-Tx-rLC" id="c1i-dv-gzU"/>
+                                            </connections>
+                                        </menuItem>
                                     </items>
                                 </menu>
                             </menuItem>
@@ -642,6 +660,7 @@
                     </connections>
                 </application>
                 <customObject id="Voe-Tx-rLC" customClass="AppDelegate"/>
+                <customObject id="sV1-KM-bXU" customClass="SUUpdater"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>

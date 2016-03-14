@@ -42,6 +42,10 @@
 		2BC444231C963256008F0531 /* PTLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444211C963256008F0531 /* PTLabels.m */; };
 		2BC444271C963390008F0531 /* NSColor+PTColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444261C963390008F0531 /* NSColor+PTColors.m */; };
 		2BC444281C963390008F0531 /* NSColor+PTColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444261C963390008F0531 /* NSColor+PTColors.m */; };
+		2BC4442B1C963F9D008F0531 /* PTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4442A1C963F9D008F0531 /* PTPerson.m */; };
+		2BC4442C1C963F9D008F0531 /* PTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4442A1C963F9D008F0531 /* PTPerson.m */; };
+		2BC4442F1C964010008F0531 /* PTTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4442E1C964010008F0531 /* PTTimeZone.m */; };
+		2BC444301C964010008F0531 /* PTTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4442E1C964010008F0531 /* PTTimeZone.m */; };
 		4D0274A7E240DE9CABC64E59 /* libPods-PT_ReleaseNotesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA6027827520C88ABC6B1F0 /* libPods-PT_ReleaseNotesTests.a */; };
 		CDC0A418253B543A9B1072D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2245BAE5FE8FE7461CC0380 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -107,6 +111,12 @@
 		2BC444211C963256008F0531 /* PTLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTLabels.m; path = "PT Classes/PTLabels.m"; sourceTree = "<group>"; };
 		2BC444251C963390008F0531 /* NSColor+PTColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+PTColors.h"; sourceTree = "<group>"; };
 		2BC444261C963390008F0531 /* NSColor+PTColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+PTColors.m"; sourceTree = "<group>"; };
+		2BC444291C963F9D008F0531 /* PTPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTPerson.h; path = "PT Classes/PTPerson.h"; sourceTree = "<group>"; };
+		2BC4442A1C963F9D008F0531 /* PTPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTPerson.m; path = "PT Classes/PTPerson.m"; sourceTree = "<group>"; };
+		2BC4442D1C964010008F0531 /* PTTimeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTTimeZone.h; path = "PT Classes/PTTimeZone.h"; sourceTree = "<group>"; };
+		2BC4442E1C964010008F0531 /* PTTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTTimeZone.m; path = "PT Classes/PTTimeZone.m"; sourceTree = "<group>"; };
+		2BD001811C97582D0060A5ED /* DMKevlarApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMKevlarApplication.h; sourceTree = "<group>"; };
+		2BD001821C97582D0060A5ED /* libkevlar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libkevlar.a; sourceTree = "<group>"; };
 		42E6932F0A8C31EA6CEEA2D1 /* Pods-PT_ReleaseNotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT_ReleaseNotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PT_ReleaseNotesTests/Pods-PT_ReleaseNotesTests.release.xcconfig"; sourceTree = "<group>"; };
 		58EF97CAD6EE3233A997B6D2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A2245BAE5FE8FE7461CC0380 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +166,10 @@
 		2B2091931C9620930089B2E6 /* PivotalTracker */ = {
 			isa = PBXGroup;
 			children = (
+				2BC4442D1C964010008F0531 /* PTTimeZone.h */,
+				2BC4442E1C964010008F0531 /* PTTimeZone.m */,
+				2BC444291C963F9D008F0531 /* PTPerson.h */,
+				2BC4442A1C963F9D008F0531 /* PTPerson.m */,
 				2B2091881C9612170089B2E6 /* PTAccount.h */,
 				2B2091891C9612170089B2E6 /* PTAccount.m */,
 				2B2091921C961FE50089B2E6 /* PTClasses.h */,
@@ -186,6 +200,7 @@
 		2B5802931C94DF3D008CED0D = {
 			isa = PBXGroup;
 			children = (
+				2BD001801C97582D0060A5ED /* Kevlar */,
 				2B5802C11C94E3F7008CED0D /* Settings and Files */,
 				2B58029E1C94DF3E008CED0D /* PT_ReleaseNotes */,
 				2B5802B51C94DF3E008CED0D /* PT_ReleaseNotesTests */,
@@ -263,6 +278,15 @@
 				2BC444261C963390008F0531 /* NSColor+PTColors.m */,
 			);
 			name = "Custom Categories";
+			sourceTree = "<group>";
+		};
+		2BD001801C97582D0060A5ED /* Kevlar */ = {
+			isa = PBXGroup;
+			children = (
+				2BD001811C97582D0060A5ED /* DMKevlarApplication.h */,
+				2BD001821C97582D0060A5ED /* libkevlar.a */,
+			);
+			path = Kevlar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,6 +487,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC4442B1C963F9D008F0531 /* PTPerson.m in Sources */,
 				2B2091A61C9621130089B2E6 /* PTEpic.m in Sources */,
 				2B2091AA1C96212C0089B2E6 /* PTEpics.m in Sources */,
 				2B2091901C961EE50089B2E6 /* ConfigurationController.m in Sources */,
@@ -470,6 +495,7 @@
 				2B5802A41C94DF3E008CED0D /* main.m in Sources */,
 				2BC4441A1C962DEB008F0531 /* Constants.m in Sources */,
 				2B2091B21C9621520089B2E6 /* PTStories.m in Sources */,
+				2BC4442F1C964010008F0531 /* PTTimeZone.m in Sources */,
 				2BC4441E1C963236008F0531 /* PTLabel.m in Sources */,
 				2B2091961C9620BB0089B2E6 /* PTProject.m in Sources */,
 				2BC444271C963390008F0531 /* NSColor+PTColors.m in Sources */,
@@ -487,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BC444301C964010008F0531 /* PTTimeZone.m in Sources */,
 				2B2091A71C9621130089B2E6 /* PTEpic.m in Sources */,
 				2B2091B31C9621520089B2E6 /* PTStories.m in Sources */,
 				2B2091AF1C9621410089B2E6 /* PTStory.m in Sources */,
@@ -496,6 +523,7 @@
 				2B2091AB1C96212C0089B2E6 /* PTEpics.m in Sources */,
 				2BC4441B1C962DEB008F0531 /* Constants.m in Sources */,
 				2BC444231C963256008F0531 /* PTLabels.m in Sources */,
+				2BC4442C1C963F9D008F0531 /* PTPerson.m in Sources */,
 				2BC4441F1C963236008F0531 /* PTLabel.m in Sources */,
 				2B20919F1C9620E70089B2E6 /* PTProjects.m in Sources */,
 				2B20918D1C96123F0089B2E6 /* PTAccountTests.m in Sources */,
@@ -617,6 +645,38 @@
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = PT_ReleaseNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworkActivityLogger\"",
+					"-l\"AFNetworking\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"DMTime\"",
+					"-l\"MGWatchdog\"",
+					"-l\"NSColor-Crayola\"",
+					"-l\"NSColor-Pantone\"",
+					"-l\"NSLogger\"",
+					"-l\"SSKeychain\"",
+					"-l\"XCDLumberjackNSLogger\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"DevMateKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+					"\"$(PROJECT_DIR)/Kevlar/libkevlar.a\"",
+					"-lcrypto",
+					"-lc++",
+					"-framework",
+					Security,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scidsolutions.PT-ReleaseNotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -632,6 +692,38 @@
 				GCC_PREFIX_HEADER = PrefixHeader.pch;
 				INFOPLIST_FILE = PT_ReleaseNotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-l\"AFNetworkActivityLogger\"",
+					"-l\"AFNetworking\"",
+					"-l\"CocoaLumberjack\"",
+					"-l\"DMTime\"",
+					"-l\"MGWatchdog\"",
+					"-l\"NSColor-Crayola\"",
+					"-l\"NSColor-Pantone\"",
+					"-l\"NSLogger\"",
+					"-l\"SSKeychain\"",
+					"-l\"XCDLumberjackNSLogger\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreServices\"",
+					"-framework",
+					"\"DevMateKit\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"SystemConfiguration\"",
+					"-ObjC",
+					"\"$(PROJECT_DIR)/Kevlar/libkevlar.a\"",
+					"-lcrypto",
+					"-lc++",
+					"-framework",
+					Security,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.scidsolutions.PT-ReleaseNotes";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
