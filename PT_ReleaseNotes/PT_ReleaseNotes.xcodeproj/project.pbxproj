@@ -7,12 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B20918A1C9612170089B2E6 /* PTAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091891C9612170089B2E6 /* PTAccount.m */; };
+		2B20918B1C9612170089B2E6 /* PTAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091891C9612170089B2E6 /* PTAccount.m */; };
+		2B20918D1C96123F0089B2E6 /* PTAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B20918C1C96123F0089B2E6 /* PTAccountTests.m */; };
+		2B2091901C961EE50089B2E6 /* ConfigurationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B20918F1C961EE50089B2E6 /* ConfigurationController.m */; };
+		2B2091911C961EE50089B2E6 /* ConfigurationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B20918F1C961EE50089B2E6 /* ConfigurationController.m */; };
+		2B2091961C9620BB0089B2E6 /* PTProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091951C9620BB0089B2E6 /* PTProject.m */; };
+		2B2091971C9620BB0089B2E6 /* PTProject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091951C9620BB0089B2E6 /* PTProject.m */; };
+		2B20919E1C9620E70089B2E6 /* PTProjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B20919D1C9620E70089B2E6 /* PTProjects.m */; };
+		2B20919F1C9620E70089B2E6 /* PTProjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B20919D1C9620E70089B2E6 /* PTProjects.m */; };
+		2B2091A61C9621130089B2E6 /* PTEpic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091A51C9621130089B2E6 /* PTEpic.m */; };
+		2B2091A71C9621130089B2E6 /* PTEpic.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091A51C9621130089B2E6 /* PTEpic.m */; };
+		2B2091AA1C96212C0089B2E6 /* PTEpics.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091A91C96212C0089B2E6 /* PTEpics.m */; };
+		2B2091AB1C96212C0089B2E6 /* PTEpics.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091A91C96212C0089B2E6 /* PTEpics.m */; };
+		2B2091AE1C9621410089B2E6 /* PTStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091AD1C9621410089B2E6 /* PTStory.m */; };
+		2B2091AF1C9621410089B2E6 /* PTStory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091AD1C9621410089B2E6 /* PTStory.m */; };
+		2B2091B21C9621520089B2E6 /* PTStories.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B11C9621520089B2E6 /* PTStories.m */; };
+		2B2091B31C9621520089B2E6 /* PTStories.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B11C9621520089B2E6 /* PTStories.m */; };
+		2B2091B61C96216E0089B2E6 /* PTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B51C96216E0089B2E6 /* PTUser.m */; };
+		2B2091B71C96216E0089B2E6 /* PTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B51C96216E0089B2E6 /* PTUser.m */; };
+		2B2091BA1C9621810089B2E6 /* PTUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B91C9621810089B2E6 /* PTUsers.m */; };
+		2B2091BB1C9621810089B2E6 /* PTUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B91C9621810089B2E6 /* PTUsers.m */; };
 		2B5802A11C94DF3E008CED0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5802A01C94DF3E008CED0D /* AppDelegate.m */; };
 		2B5802A41C94DF3E008CED0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5802A31C94DF3E008CED0D /* main.m */; };
 		2B5802A71C94DF3E008CED0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5802A61C94DF3E008CED0D /* ViewController.m */; };
 		2B5802A91C94DF3E008CED0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5802A81C94DF3E008CED0D /* Assets.xcassets */; };
 		2B5802AC1C94DF3E008CED0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5802AA1C94DF3E008CED0D /* Main.storyboard */; };
 		2B5802B71C94DF3E008CED0D /* PT_ReleaseNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5802B61C94DF3E008CED0D /* PT_ReleaseNotesTests.m */; };
+		2BC4441A1C962DEB008F0531 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444191C962DEB008F0531 /* Constants.m */; };
+		2BC4441B1C962DEB008F0531 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444191C962DEB008F0531 /* Constants.m */; };
+		2BC4441E1C963236008F0531 /* PTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4441D1C963236008F0531 /* PTLabel.m */; };
+		2BC4441F1C963236008F0531 /* PTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4441D1C963236008F0531 /* PTLabel.m */; };
+		2BC444221C963256008F0531 /* PTLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444211C963256008F0531 /* PTLabels.m */; };
+		2BC444231C963256008F0531 /* PTLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444211C963256008F0531 /* PTLabels.m */; };
+		2BC444271C963390008F0531 /* NSColor+PTColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444261C963390008F0531 /* NSColor+PTColors.m */; };
+		2BC444281C963390008F0531 /* NSColor+PTColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444261C963390008F0531 /* NSColor+PTColors.m */; };
 		4D0274A7E240DE9CABC64E59 /* libPods-PT_ReleaseNotesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA6027827520C88ABC6B1F0 /* libPods-PT_ReleaseNotesTests.a */; };
 		CDC0A418253B543A9B1072D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2245BAE5FE8FE7461CC0380 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -30,6 +59,28 @@
 /* Begin PBXFileReference section */
 		0C17FB8F82B16D33296C08C5 /* Pods-PT_ReleaseNotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT_ReleaseNotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PT_ReleaseNotesTests/Pods-PT_ReleaseNotesTests.debug.xcconfig"; sourceTree = "<group>"; };
 		1AA6027827520C88ABC6B1F0 /* libPods-PT_ReleaseNotesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PT_ReleaseNotesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B2091881C9612170089B2E6 /* PTAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTAccount.h; path = "PT Classes/PTAccount.h"; sourceTree = "<group>"; };
+		2B2091891C9612170089B2E6 /* PTAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTAccount.m; path = "PT Classes/PTAccount.m"; sourceTree = "<group>"; };
+		2B20918C1C96123F0089B2E6 /* PTAccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAccountTests.m; sourceTree = "<group>"; };
+		2B20918E1C961EE50089B2E6 /* ConfigurationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigurationController.h; path = "View Controllers/ConfigurationController.h"; sourceTree = "<group>"; };
+		2B20918F1C961EE50089B2E6 /* ConfigurationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigurationController.m; path = "View Controllers/ConfigurationController.m"; sourceTree = "<group>"; };
+		2B2091921C961FE50089B2E6 /* PTClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTClasses.h; path = "PT Classes/PTClasses.h"; sourceTree = "<group>"; };
+		2B2091941C9620BB0089B2E6 /* PTProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTProject.h; path = "PT Classes/PTProject.h"; sourceTree = "<group>"; };
+		2B2091951C9620BB0089B2E6 /* PTProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTProject.m; path = "PT Classes/PTProject.m"; sourceTree = "<group>"; };
+		2B20919C1C9620E70089B2E6 /* PTProjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTProjects.h; path = "PT Classes/PTProjects.h"; sourceTree = "<group>"; };
+		2B20919D1C9620E70089B2E6 /* PTProjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTProjects.m; path = "PT Classes/PTProjects.m"; sourceTree = "<group>"; };
+		2B2091A41C9621130089B2E6 /* PTEpic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTEpic.h; path = "PT Classes/PTEpic.h"; sourceTree = "<group>"; };
+		2B2091A51C9621130089B2E6 /* PTEpic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTEpic.m; path = "PT Classes/PTEpic.m"; sourceTree = "<group>"; };
+		2B2091A81C96212C0089B2E6 /* PTEpics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTEpics.h; path = "PT Classes/PTEpics.h"; sourceTree = "<group>"; };
+		2B2091A91C96212C0089B2E6 /* PTEpics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTEpics.m; path = "PT Classes/PTEpics.m"; sourceTree = "<group>"; };
+		2B2091AC1C9621410089B2E6 /* PTStory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTStory.h; path = "PT Classes/PTStory.h"; sourceTree = "<group>"; };
+		2B2091AD1C9621410089B2E6 /* PTStory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTStory.m; path = "PT Classes/PTStory.m"; sourceTree = "<group>"; };
+		2B2091B01C9621520089B2E6 /* PTStories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTStories.h; path = "PT Classes/PTStories.h"; sourceTree = "<group>"; };
+		2B2091B11C9621520089B2E6 /* PTStories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTStories.m; path = "PT Classes/PTStories.m"; sourceTree = "<group>"; };
+		2B2091B41C96216E0089B2E6 /* PTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTUser.h; path = "PT Classes/PTUser.h"; sourceTree = "<group>"; };
+		2B2091B51C96216E0089B2E6 /* PTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTUser.m; path = "PT Classes/PTUser.m"; sourceTree = "<group>"; };
+		2B2091B81C9621810089B2E6 /* PTUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTUsers.h; path = "PT Classes/PTUsers.h"; sourceTree = "<group>"; };
+		2B2091B91C9621810089B2E6 /* PTUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTUsers.m; path = "PT Classes/PTUsers.m"; sourceTree = "<group>"; };
 		2B58029C1C94DF3E008CED0D /* PT_ReleaseNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PT_ReleaseNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B58029F1C94DF3E008CED0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B5802A01C94DF3E008CED0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -46,8 +97,16 @@
 		2B5802C31C94E41C008CED0D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2B5802C41C94E436008CED0D /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; name = .gitignore; path = ../.gitignore; sourceTree = "<group>"; };
 		2B5802C51C94E440008CED0D /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
-		2B5802C61C94E544008CED0D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		2B5802C61C94E544008CED0D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2B5802C71C94EBE7008CED0D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		2BC444181C962DEB008F0531 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2BC444191C962DEB008F0531 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		2BC4441C1C963236008F0531 /* PTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTLabel.h; path = "PT Classes/PTLabel.h"; sourceTree = "<group>"; };
+		2BC4441D1C963236008F0531 /* PTLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTLabel.m; path = "PT Classes/PTLabel.m"; sourceTree = "<group>"; };
+		2BC444201C963256008F0531 /* PTLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTLabels.h; path = "PT Classes/PTLabels.h"; sourceTree = "<group>"; };
+		2BC444211C963256008F0531 /* PTLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTLabels.m; path = "PT Classes/PTLabels.m"; sourceTree = "<group>"; };
+		2BC444251C963390008F0531 /* NSColor+PTColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+PTColors.h"; sourceTree = "<group>"; };
+		2BC444261C963390008F0531 /* NSColor+PTColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+PTColors.m"; sourceTree = "<group>"; };
 		42E6932F0A8C31EA6CEEA2D1 /* Pods-PT_ReleaseNotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT_ReleaseNotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PT_ReleaseNotesTests/Pods-PT_ReleaseNotesTests.release.xcconfig"; sourceTree = "<group>"; };
 		58EF97CAD6EE3233A997B6D2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A2245BAE5FE8FE7461CC0380 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +153,36 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		2B2091931C9620930089B2E6 /* PivotalTracker */ = {
+			isa = PBXGroup;
+			children = (
+				2B2091881C9612170089B2E6 /* PTAccount.h */,
+				2B2091891C9612170089B2E6 /* PTAccount.m */,
+				2B2091921C961FE50089B2E6 /* PTClasses.h */,
+				2B2091941C9620BB0089B2E6 /* PTProject.h */,
+				2B2091951C9620BB0089B2E6 /* PTProject.m */,
+				2B20919C1C9620E70089B2E6 /* PTProjects.h */,
+				2B20919D1C9620E70089B2E6 /* PTProjects.m */,
+				2B2091A41C9621130089B2E6 /* PTEpic.h */,
+				2B2091A51C9621130089B2E6 /* PTEpic.m */,
+				2B2091A81C96212C0089B2E6 /* PTEpics.h */,
+				2B2091A91C96212C0089B2E6 /* PTEpics.m */,
+				2B2091AC1C9621410089B2E6 /* PTStory.h */,
+				2B2091AD1C9621410089B2E6 /* PTStory.m */,
+				2B2091B01C9621520089B2E6 /* PTStories.h */,
+				2B2091B11C9621520089B2E6 /* PTStories.m */,
+				2B2091B41C96216E0089B2E6 /* PTUser.h */,
+				2B2091B51C96216E0089B2E6 /* PTUser.m */,
+				2B2091B81C9621810089B2E6 /* PTUsers.h */,
+				2B2091B91C9621810089B2E6 /* PTUsers.m */,
+				2BC4441C1C963236008F0531 /* PTLabel.h */,
+				2BC4441D1C963236008F0531 /* PTLabel.m */,
+				2BC444201C963256008F0531 /* PTLabels.h */,
+				2BC444211C963256008F0531 /* PTLabels.m */,
+			);
+			name = PivotalTracker;
+			sourceTree = "<group>";
+		};
 		2B5802931C94DF3D008CED0D = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +207,7 @@
 		2B58029E1C94DF3E008CED0D /* PT_ReleaseNotes */ = {
 			isa = PBXGroup;
 			children = (
+				2BC444241C963367008F0531 /* Custom Categories */,
 				2B58029F1C94DF3E008CED0D /* AppDelegate.h */,
 				2B5802A01C94DF3E008CED0D /* AppDelegate.m */,
 				2B5802A51C94DF3E008CED0D /* ViewController.h */,
@@ -126,6 +216,11 @@
 				2B5802AA1C94DF3E008CED0D /* Main.storyboard */,
 				2B5802AD1C94DF3E008CED0D /* Info.plist */,
 				2B5802A21C94DF3E008CED0D /* Supporting Files */,
+				2B2091931C9620930089B2E6 /* PivotalTracker */,
+				2B20918E1C961EE50089B2E6 /* ConfigurationController.h */,
+				2B20918F1C961EE50089B2E6 /* ConfigurationController.m */,
+				2BC444181C962DEB008F0531 /* Constants.h */,
+				2BC444191C962DEB008F0531 /* Constants.m */,
 			);
 			path = PT_ReleaseNotes;
 			sourceTree = "<group>";
@@ -144,6 +239,7 @@
 			children = (
 				2B5802B61C94DF3E008CED0D /* PT_ReleaseNotesTests.m */,
 				2B5802B81C94DF3E008CED0D /* Info.plist */,
+				2B20918C1C96123F0089B2E6 /* PTAccountTests.m */,
 			);
 			path = PT_ReleaseNotesTests;
 			sourceTree = "<group>";
@@ -158,6 +254,15 @@
 				2B5802C31C94E41C008CED0D /* README.md */,
 			);
 			name = "Settings and Files";
+			sourceTree = "<group>";
+		};
+		2BC444241C963367008F0531 /* Custom Categories */ = {
+			isa = PBXGroup;
+			children = (
+				2BC444251C963390008F0531 /* NSColor+PTColors.h */,
+				2BC444261C963390008F0531 /* NSColor+PTColors.m */,
+			);
+			name = "Custom Categories";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,9 +463,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2091A61C9621130089B2E6 /* PTEpic.m in Sources */,
+				2B2091AA1C96212C0089B2E6 /* PTEpics.m in Sources */,
+				2B2091901C961EE50089B2E6 /* ConfigurationController.m in Sources */,
 				2B5802A71C94DF3E008CED0D /* ViewController.m in Sources */,
 				2B5802A41C94DF3E008CED0D /* main.m in Sources */,
+				2BC4441A1C962DEB008F0531 /* Constants.m in Sources */,
+				2B2091B21C9621520089B2E6 /* PTStories.m in Sources */,
+				2BC4441E1C963236008F0531 /* PTLabel.m in Sources */,
+				2B2091961C9620BB0089B2E6 /* PTProject.m in Sources */,
+				2BC444271C963390008F0531 /* NSColor+PTColors.m in Sources */,
 				2B5802A11C94DF3E008CED0D /* AppDelegate.m in Sources */,
+				2B2091BA1C9621810089B2E6 /* PTUsers.m in Sources */,
+				2B20918A1C9612170089B2E6 /* PTAccount.m in Sources */,
+				2BC444221C963256008F0531 /* PTLabels.m in Sources */,
+				2B20919E1C9620E70089B2E6 /* PTProjects.m in Sources */,
+				2B2091B61C96216E0089B2E6 /* PTUser.m in Sources */,
+				2B2091AE1C9621410089B2E6 /* PTStory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,7 +487,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B2091A71C9621130089B2E6 /* PTEpic.m in Sources */,
+				2B2091B31C9621520089B2E6 /* PTStories.m in Sources */,
+				2B2091AF1C9621410089B2E6 /* PTStory.m in Sources */,
+				2B2091911C961EE50089B2E6 /* ConfigurationController.m in Sources */,
+				2B2091971C9620BB0089B2E6 /* PTProject.m in Sources */,
 				2B5802B71C94DF3E008CED0D /* PT_ReleaseNotesTests.m in Sources */,
+				2B2091AB1C96212C0089B2E6 /* PTEpics.m in Sources */,
+				2BC4441B1C962DEB008F0531 /* Constants.m in Sources */,
+				2BC444231C963256008F0531 /* PTLabels.m in Sources */,
+				2BC4441F1C963236008F0531 /* PTLabel.m in Sources */,
+				2B20919F1C9620E70089B2E6 /* PTProjects.m in Sources */,
+				2B20918D1C96123F0089B2E6 /* PTAccountTests.m in Sources */,
+				2B2091B71C96216E0089B2E6 /* PTUser.m in Sources */,
+				2B2091BB1C9621810089B2E6 /* PTUsers.m in Sources */,
+				2BC444281C963390008F0531 /* NSColor+PTColors.m in Sources */,
+				2B20918B1C9612170089B2E6 /* PTAccount.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

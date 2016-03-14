@@ -15,7 +15,27 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
+    // setup logging
+
+    [DDLog addLogger:[DDTTYLogger sharedInstance]]; // TTY = Xcode console
+    [DDLog addLogger:[DDASLLogger sharedInstance]]; // ASL = Apple System Logs
+    XCDLumberjackNSLogger *logger = [XCDLumberjackNSLogger new];
+    [DDLog addLogger:logger withLevel:DDLogLevelAll]; // normally DDLogLevelWarning | DDLogLevelErrorn
+    [[DDTTYLogger sharedInstance] setColorsEnabled:YES];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[NSColor greenColor]
+                                     backgroundColor:nil
+                                             forFlag:DDLogFlagDebug];
+    [[DDTTYLogger sharedInstance] setForegroundColor:[NSColor blueColor]
+                                     backgroundColor:nil
+                                             forFlag:DDLogFlagInfo];
+    
+
+
+    DDLogVerbose(@"Verbose");
+    DDLogDebug(@"Debug");
+    DDLogInfo(@"Info");
+    DDLogWarn(@"Warn");
+    DDLogError(@"Error");
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {

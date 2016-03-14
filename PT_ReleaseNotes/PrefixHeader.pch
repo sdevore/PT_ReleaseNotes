@@ -17,4 +17,11 @@
 #import "AFNetworkActivityLogger.h"
 #import "AFNetworking.h"
 
+#import "Constants.h"
 #endif /* PrefixHeader_pch */
+
+#ifdef DEBUG
+static const DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static const DDLogLevel ddLogLevel = DDLogLevelWarn;
+#endif
