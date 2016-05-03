@@ -13,8 +13,8 @@
 @interface ConfigurationController : NSViewController
 
 @property (nullable, strong) PTAccount  *account;
-@property (weak) IBOutlet NSButton *LoadButton;
-@property (weak) IBOutlet NSPopUpButton *ProjectsPopUpButton;
+@property (weak) IBOutlet NSButton *_Nullable LoadButton;
+@property (weak) IBOutlet NSPopUpButton *_Nullable ProjectsPopUpButton;
 
 
 - (IBAction)projectsPopUpButton:(nullable id)sender;

@@ -13,5 +13,5 @@
 + (nonnull NSURLSession *)sharedSession;
 
 - (IBAction)showFeedbackDialog:(nullable id)sender;
-- (IBAction)startActivationProcess:(id)sender;
+- (IBAction)startActivationProcess:(nullable id)sender;
 @end
