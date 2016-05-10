@@ -8,8 +8,11 @@
 
 #import "ConfigurationController.h"
 #import "PTClasses.h"
-@interface ConfigurationController ()
+#import "PivotTrackerXPCProtocol.h"
 
+@interface ConfigurationController ()
+@property (atomic, strong, readwrite) NSXPCConnection *connection;
+@property (atomic, strong) NSMutableDictionary *connections;
 @end
 
 @implementation ConfigurationController
@@ -55,4 +58,56 @@
         }
     }
 }
+
+- (IBAction)remoteTest:(id)sender {
+    [self executeRemoteProcess:@"one"];
+    [self executeRemoteProcess:@"two"];
+    [self executeRemoteProcess:@"three"];
+    [self executeRemoteProcess:@"four"];
+}
+
+- (void)executeRemoteProcess:(NSString *)name {
+    // Create our connection
+    NSXPCInterface *myCookieInterface = [NSXPCInterface interfaceWithProtocol:@protocol(PivotTrackerXPCProtocol)];
+    NSXPCConnection *connection = [[NSXPCConnection alloc] initWithServiceName:@"com.scidsolutions.PivotTrackerXPC"];
+    if (nil == self.connections) {
+        self.connections = [NSMutableDictionary new];
+    }
+    [self.connections setObject:connection forKey:name];
+    [connection setRemoteObjectInterface:myCookieInterface];
+
+    connection.exportedInterface = [NSXPCInterface interfaceWithProtocol:@protocol(PivotTrackerXPCReturnProtocol)];
+    connection.exportedObject = self;
+
+    [connection resume];
+
+    id<PivotTrackerXPCProtocol> theProcessor = [connection remoteObjectProxyWithErrorHandler:^(NSError *err) {
+        NSAlert *alert = [[NSAlert alloc] init];
+        [alert addButtonWithTitle:@"OK"];
+        [alert setMessageText:err.localizedDescription];
+        [alert setAlertStyle:NSWarningAlertStyle];
+
+        [alert performSelectorOnMainThread:@selector(runModal) withObject:nil waitUntilDone:YES];
+    }];
+
+    [theProcessor doProcessing:name
+                     withReply:^(NSString *response) {
+                         DDLogInfo(@"Received response: %@", response);
+                     }];
+}
+
+#pragma mark -
+#pragma mark Progress
+
+- (void)updateProgress:(double)currentProgress withName:(NSString *)name {
+    DDLogInfo(@"%@ In progress: %f", name, currentProgress);
+}
+
+- (void)finished:(NSString *)name {
+    DDLogInfo(@"%@ Has finished!", name);
+    if (nil != self.connection) {
+        [self.connections removeObjectForKey:name];
+    }
+}
+
 @end
