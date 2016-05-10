@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2922FBCF3E4A73E7E8415547 /* libPods-PivotalTracker-PT_ReleaseNotesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C6B57F417DCB97136EB20726 /* libPods-PivotalTracker-PT_ReleaseNotesTests.a */; };
 		2B20918A1C9612170089B2E6 /* PTAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091891C9612170089B2E6 /* PTAccount.m */; };
 		2B20918B1C9612170089B2E6 /* PTAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091891C9612170089B2E6 /* PTAccount.m */; };
 		2B20918D1C96123F0089B2E6 /* PTAccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B20918C1C96123F0089B2E6 /* PTAccountTests.m */; };
@@ -28,6 +29,9 @@
 		2B2091B71C96216E0089B2E6 /* PTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B51C96216E0089B2E6 /* PTUser.m */; };
 		2B2091BA1C9621810089B2E6 /* PTUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B91C9621810089B2E6 /* PTUsers.m */; };
 		2B2091BB1C9621810089B2E6 /* PTUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B91C9621810089B2E6 /* PTUsers.m */; };
+		2B5060D71CDAD72C00C8A2BB /* PivotTrackerXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5060D61CDAD72C00C8A2BB /* PivotTrackerXPC.m */; };
+		2B5060D91CDAD72C00C8A2BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5060D81CDAD72C00C8A2BB /* main.m */; };
+		2B5060DD1CDAD72C00C8A2BB /* PivotTrackerXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 2B5060D21CDAD72C00C8A2BB /* PivotTrackerXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2B5802A11C94DF3E008CED0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5802A01C94DF3E008CED0D /* AppDelegate.m */; };
 		2B5802A41C94DF3E008CED0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5802A31C94DF3E008CED0D /* main.m */; };
 		2B5802A71C94DF3E008CED0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5802A61C94DF3E008CED0D /* ViewController.m */; };
@@ -46,11 +50,19 @@
 		2BC4442C1C963F9D008F0531 /* PTPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4442A1C963F9D008F0531 /* PTPerson.m */; };
 		2BC4442F1C964010008F0531 /* PTTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4442E1C964010008F0531 /* PTTimeZone.m */; };
 		2BC444301C964010008F0531 /* PTTimeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4442E1C964010008F0531 /* PTTimeZone.m */; };
-		4D0274A7E240DE9CABC64E59 /* libPods-PT_ReleaseNotesTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA6027827520C88ABC6B1F0 /* libPods-PT_ReleaseNotesTests.a */; };
-		CDC0A418253B543A9B1072D7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2245BAE5FE8FE7461CC0380 /* libPods.a */; };
+		2BF9136D1CE2582100C05D6E /* SCDMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BF9136C1CE2582100C05D6E /* SCDMutableDictionary.m */; };
+		A5DE2FE8725CC64E36E804D6 /* libPods-PivotalTracker-PT_ReleaseNotes.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5449E2D5C384BCAD63DDF2C /* libPods-PivotalTracker-PT_ReleaseNotes.a */; };
+		E0B9EFC4B3A12BFC30490EFD /* libPods-PivotalTracker-PivotTrackerXPC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F7C7B608125A1E06265FC0 /* libPods-PivotalTracker-PivotTrackerXPC.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		2B5060DB1CDAD72C00C8A2BB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B5802941C94DF3D008CED0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B5060D11CDAD72C00C8A2BB;
+			remoteInfo = PivotTrackerXPC;
+		};
 		2B5802B31C94DF3E008CED0D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2B5802941C94DF3D008CED0D /* Project object */;
@@ -60,9 +72,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		2B5060E11CDAD72D00C8A2BB /* Embed XPC Services */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/XPCServices";
+			dstSubfolderSpec = 16;
+			files = (
+				2B5060DD1CDAD72C00C8A2BB /* PivotTrackerXPC.xpc in Embed XPC Services */,
+			);
+			name = "Embed XPC Services";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0C17FB8F82B16D33296C08C5 /* Pods-PT_ReleaseNotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT_ReleaseNotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PT_ReleaseNotesTests/Pods-PT_ReleaseNotesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1AA6027827520C88ABC6B1F0 /* libPods-PT_ReleaseNotesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PT_ReleaseNotesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		020392F9F77C3DADAED7A9CA /* Pods-PivotalTracker-PT_ReleaseNotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PivotalTracker-PT_ReleaseNotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PivotalTracker-PT_ReleaseNotesTests/Pods-PivotalTracker-PT_ReleaseNotesTests.release.xcconfig"; sourceTree = "<group>"; };
 		2B2091881C9612170089B2E6 /* PTAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTAccount.h; path = "PT Classes/PTAccount.h"; sourceTree = "<group>"; };
 		2B2091891C9612170089B2E6 /* PTAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTAccount.m; path = "PT Classes/PTAccount.m"; sourceTree = "<group>"; };
 		2B20918C1C96123F0089B2E6 /* PTAccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAccountTests.m; sourceTree = "<group>"; };
@@ -85,6 +110,12 @@
 		2B2091B51C96216E0089B2E6 /* PTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTUser.m; path = "PT Classes/PTUser.m"; sourceTree = "<group>"; };
 		2B2091B81C9621810089B2E6 /* PTUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTUsers.h; path = "PT Classes/PTUsers.h"; sourceTree = "<group>"; };
 		2B2091B91C9621810089B2E6 /* PTUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTUsers.m; path = "PT Classes/PTUsers.m"; sourceTree = "<group>"; };
+		2B5060D21CDAD72C00C8A2BB /* PivotTrackerXPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = PivotTrackerXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B5060D41CDAD72C00C8A2BB /* PivotTrackerXPCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PivotTrackerXPCProtocol.h; sourceTree = "<group>"; };
+		2B5060D51CDAD72C00C8A2BB /* PivotTrackerXPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PivotTrackerXPC.h; sourceTree = "<group>"; };
+		2B5060D61CDAD72C00C8A2BB /* PivotTrackerXPC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PivotTrackerXPC.m; sourceTree = "<group>"; };
+		2B5060D81CDAD72C00C8A2BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2B5060DA1CDAD72C00C8A2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2B58029C1C94DF3E008CED0D /* PT_ReleaseNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PT_ReleaseNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B58029F1C94DF3E008CED0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2B5802A01C94DF3E008CED0D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,18 +148,32 @@
 		2BC4442E1C964010008F0531 /* PTTimeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTTimeZone.m; path = "PT Classes/PTTimeZone.m"; sourceTree = "<group>"; };
 		2BD001811C97582D0060A5ED /* DMKevlarApplication.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMKevlarApplication.h; sourceTree = "<group>"; };
 		2BD001821C97582D0060A5ED /* libkevlar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libkevlar.a; sourceTree = "<group>"; };
-		42E6932F0A8C31EA6CEEA2D1 /* Pods-PT_ReleaseNotesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PT_ReleaseNotesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PT_ReleaseNotesTests/Pods-PT_ReleaseNotesTests.release.xcconfig"; sourceTree = "<group>"; };
-		58EF97CAD6EE3233A997B6D2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		A2245BAE5FE8FE7461CC0380 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F6BA61D57E9B6FE14093C535 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		2BF9136B1CE2582100C05D6E /* SCDMutableDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SCDMutableDictionary.h; path = Categories/SCDMutableDictionary.h; sourceTree = "<group>"; };
+		2BF9136C1CE2582100C05D6E /* SCDMutableDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SCDMutableDictionary.m; path = Categories/SCDMutableDictionary.m; sourceTree = "<group>"; };
+		307FE2AC246759A8587004D5 /* Pods-PivotalTracker-PT_ReleaseNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PivotalTracker-PT_ReleaseNotes.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PivotalTracker-PT_ReleaseNotes/Pods-PivotalTracker-PT_ReleaseNotes.debug.xcconfig"; sourceTree = "<group>"; };
+		360CF7AB5431AE526D62FB24 /* Pods-PivotalTracker-PivotTrackerXPC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PivotalTracker-PivotTrackerXPC.release.xcconfig"; path = "Pods/Target Support Files/Pods-PivotalTracker-PivotTrackerXPC/Pods-PivotalTracker-PivotTrackerXPC.release.xcconfig"; sourceTree = "<group>"; };
+		84F7C7B608125A1E06265FC0 /* libPods-PivotalTracker-PivotTrackerXPC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PivotalTracker-PivotTrackerXPC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D129DF3453432544CC83690 /* Pods-PivotalTracker-PivotTrackerXPC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PivotalTracker-PivotTrackerXPC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PivotalTracker-PivotTrackerXPC/Pods-PivotalTracker-PivotTrackerXPC.debug.xcconfig"; sourceTree = "<group>"; };
+		92C843ADDE260269481D3AC8 /* Pods-PivotalTracker-PT_ReleaseNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PivotalTracker-PT_ReleaseNotes.release.xcconfig"; path = "Pods/Target Support Files/Pods-PivotalTracker-PT_ReleaseNotes/Pods-PivotalTracker-PT_ReleaseNotes.release.xcconfig"; sourceTree = "<group>"; };
+		A2BB6A79BA5DEFC48C32921C /* Pods-PivotalTracker-PT_ReleaseNotesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PivotalTracker-PT_ReleaseNotesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PivotalTracker-PT_ReleaseNotesTests/Pods-PivotalTracker-PT_ReleaseNotesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6B57F417DCB97136EB20726 /* libPods-PivotalTracker-PT_ReleaseNotesTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PivotalTracker-PT_ReleaseNotesTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5449E2D5C384BCAD63DDF2C /* libPods-PivotalTracker-PT_ReleaseNotes.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PivotalTracker-PT_ReleaseNotes.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2B5060CF1CDAD72C00C8A2BB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0B9EFC4B3A12BFC30490EFD /* libPods-PivotalTracker-PivotTrackerXPC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B5802991C94DF3D008CED0D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDC0A418253B543A9B1072D7 /* libPods.a in Frameworks */,
+				A5DE2FE8725CC64E36E804D6 /* libPods-PivotalTracker-PT_ReleaseNotes.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,33 +181,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D0274A7E240DE9CABC64E59 /* libPods-PT_ReleaseNotesTests.a in Frameworks */,
+				2922FBCF3E4A73E7E8415547 /* libPods-PivotalTracker-PT_ReleaseNotesTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1CEEB4BDEDF6AD107B186C1E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A2245BAE5FE8FE7461CC0380 /* libPods.a */,
-				1AA6027827520C88ABC6B1F0 /* libPods-PT_ReleaseNotesTests.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2AF1C489B20DF6B54F3C2300 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F6BA61D57E9B6FE14093C535 /* Pods.debug.xcconfig */,
-				58EF97CAD6EE3233A997B6D2 /* Pods.release.xcconfig */,
-				0C17FB8F82B16D33296C08C5 /* Pods-PT_ReleaseNotesTests.debug.xcconfig */,
-				42E6932F0A8C31EA6CEEA2D1 /* Pods-PT_ReleaseNotesTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		2B2091931C9620930089B2E6 /* PivotalTracker */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +222,18 @@
 			name = PivotalTracker;
 			sourceTree = "<group>";
 		};
+		2B5060D31CDAD72C00C8A2BB /* PivotTrackerXPC */ = {
+			isa = PBXGroup;
+			children = (
+				2B5060D41CDAD72C00C8A2BB /* PivotTrackerXPCProtocol.h */,
+				2B5060D51CDAD72C00C8A2BB /* PivotTrackerXPC.h */,
+				2B5060D61CDAD72C00C8A2BB /* PivotTrackerXPC.m */,
+				2B5060D81CDAD72C00C8A2BB /* main.m */,
+				2B5060DA1CDAD72C00C8A2BB /* Info.plist */,
+			);
+			path = PivotTrackerXPC;
+			sourceTree = "<group>";
+		};
 		2B5802931C94DF3D008CED0D = {
 			isa = PBXGroup;
 			children = (
@@ -204,9 +241,10 @@
 				2B5802C11C94E3F7008CED0D /* Settings and Files */,
 				2B58029E1C94DF3E008CED0D /* PT_ReleaseNotes */,
 				2B5802B51C94DF3E008CED0D /* PT_ReleaseNotesTests */,
+				2B5060D31CDAD72C00C8A2BB /* PivotTrackerXPC */,
 				2B58029D1C94DF3E008CED0D /* Products */,
-				2AF1C489B20DF6B54F3C2300 /* Pods */,
-				1CEEB4BDEDF6AD107B186C1E /* Frameworks */,
+				793A712758AFC837B25D55F9 /* Pods */,
+				68BA29EE64B5263159C8213B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,6 +253,7 @@
 			children = (
 				2B58029C1C94DF3E008CED0D /* PT_ReleaseNotes.app */,
 				2B5802B21C94DF3E008CED0D /* PT_ReleaseNotesTests.xctest */,
+				2B5060D21CDAD72C00C8A2BB /* PivotTrackerXPC.xpc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,6 +315,8 @@
 			children = (
 				2BC444251C963390008F0531 /* NSColor+PTColors.h */,
 				2BC444261C963390008F0531 /* NSColor+PTColors.m */,
+				2BF9136B1CE2582100C05D6E /* SCDMutableDictionary.h */,
+				2BF9136C1CE2582100C05D6E /* SCDMutableDictionary.m */,
 			);
 			name = "Custom Categories";
 			sourceTree = "<group>";
@@ -289,23 +330,67 @@
 			path = Kevlar;
 			sourceTree = "<group>";
 		};
+		68BA29EE64B5263159C8213B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5449E2D5C384BCAD63DDF2C /* libPods-PivotalTracker-PT_ReleaseNotes.a */,
+				C6B57F417DCB97136EB20726 /* libPods-PivotalTracker-PT_ReleaseNotesTests.a */,
+				84F7C7B608125A1E06265FC0 /* libPods-PivotalTracker-PivotTrackerXPC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		793A712758AFC837B25D55F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				307FE2AC246759A8587004D5 /* Pods-PivotalTracker-PT_ReleaseNotes.debug.xcconfig */,
+				92C843ADDE260269481D3AC8 /* Pods-PivotalTracker-PT_ReleaseNotes.release.xcconfig */,
+				A2BB6A79BA5DEFC48C32921C /* Pods-PivotalTracker-PT_ReleaseNotesTests.debug.xcconfig */,
+				020392F9F77C3DADAED7A9CA /* Pods-PivotalTracker-PT_ReleaseNotesTests.release.xcconfig */,
+				8D129DF3453432544CC83690 /* Pods-PivotalTracker-PivotTrackerXPC.debug.xcconfig */,
+				360CF7AB5431AE526D62FB24 /* Pods-PivotalTracker-PivotTrackerXPC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2B58029B1C94DF3D008CED0D /* PT_ReleaseNotes */ = {
+		2B5060D11CDAD72C00C8A2BB /* PivotTrackerXPC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B5802BB1C94DF3E008CED0D /* Build configuration list for PBXNativeTarget "PT_ReleaseNotes" */;
+			buildConfigurationList = 2B5060E01CDAD72D00C8A2BB /* Build configuration list for PBXNativeTarget "PivotTrackerXPC" */;
 			buildPhases = (
-				322D6D9C2F111E774EFC3EDA /* Check Pods Manifest.lock */,
-				2B5802981C94DF3D008CED0D /* Sources */,
-				2B5802991C94DF3D008CED0D /* Frameworks */,
-				2B58029A1C94DF3D008CED0D /* Resources */,
-				7B0C3EE39BAD6797BFEB808D /* Embed Pods Frameworks */,
-				3E5F804CCB753ED839807DA5 /* Copy Pods Resources */,
+				EF560C98FF5198A53263FF9F /* 📦 Check Pods Manifest.lock */,
+				2B5060CE1CDAD72C00C8A2BB /* Sources */,
+				2B5060CF1CDAD72C00C8A2BB /* Frameworks */,
+				2B5060D01CDAD72C00C8A2BB /* Resources */,
+				260C63559F0676C38941C72E /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = PivotTrackerXPC;
+			productName = PivotTrackerXPC;
+			productReference = 2B5060D21CDAD72C00C8A2BB /* PivotTrackerXPC.xpc */;
+			productType = "com.apple.product-type.xpc-service";
+		};
+		2B58029B1C94DF3D008CED0D /* PT_ReleaseNotes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B5802BB1C94DF3E008CED0D /* Build configuration list for PBXNativeTarget "PT_ReleaseNotes" */;
+			buildPhases = (
+				F3241A0CAF3F419BBAA2DEE2 /* 📦 Check Pods Manifest.lock */,
+				2B5802981C94DF3D008CED0D /* Sources */,
+				2B5802991C94DF3D008CED0D /* Frameworks */,
+				2B58029A1C94DF3D008CED0D /* Resources */,
+				2B5060E11CDAD72D00C8A2BB /* Embed XPC Services */,
+				64B74DD2D510606D6EC01DF3 /* 📦 Embed Pods Frameworks */,
+				CB0254907FEC1C1BAF3B4711 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B5060DC1CDAD72C00C8A2BB /* PBXTargetDependency */,
 			);
 			name = PT_ReleaseNotes;
 			productName = PT_ReleaseNotes;
@@ -316,12 +401,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2B5802BE1C94DF3E008CED0D /* Build configuration list for PBXNativeTarget "PT_ReleaseNotesTests" */;
 			buildPhases = (
-				F0E9A056ADEFDB3AF3CC2F33 /* Check Pods Manifest.lock */,
+				9C793CC40C3C8A6E8D1A668E /* 📦 Check Pods Manifest.lock */,
 				2B5802AE1C94DF3E008CED0D /* Sources */,
 				2B5802AF1C94DF3E008CED0D /* Frameworks */,
 				2B5802B01C94DF3E008CED0D /* Resources */,
-				7B560703A3DCA5180FC1CB6B /* Embed Pods Frameworks */,
-				4D01B4679408FBEDA63E9B5D /* Copy Pods Resources */,
+				0E6D74AB03BB430B67933953 /* 📦 Embed Pods Frameworks */,
+				9B02F4C91F1873D26E922BEA /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -342,6 +427,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Samuel DeVore";
 				TargetAttributes = {
+					2B5060D11CDAD72C00C8A2BB = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 					2B58029B1C94DF3D008CED0D = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -366,11 +454,19 @@
 			targets = (
 				2B58029B1C94DF3D008CED0D /* PT_ReleaseNotes */,
 				2B5802B11C94DF3E008CED0D /* PT_ReleaseNotesTests */,
+				2B5060D11CDAD72C00C8A2BB /* PivotTrackerXPC */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		2B5060D01CDAD72C00C8A2BB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B58029A1C94DF3D008CED0D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -390,14 +486,74 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		322D6D9C2F111E774EFC3EDA /* Check Pods Manifest.lock */ = {
+		0E6D74AB03BB430B67933953 /* 📦 Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PivotalTracker-PT_ReleaseNotesTests/Pods-PivotalTracker-PT_ReleaseNotesTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		260C63559F0676C38941C72E /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PivotalTracker-PivotTrackerXPC/Pods-PivotalTracker-PivotTrackerXPC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64B74DD2D510606D6EC01DF3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PivotalTracker-PT_ReleaseNotes/Pods-PivotalTracker-PT_ReleaseNotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B02F4C91F1873D26E922BEA /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PivotalTracker-PT_ReleaseNotesTests/Pods-PivotalTracker-PT_ReleaseNotesTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C793CC40C3C8A6E8D1A668E /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -405,74 +561,44 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3E5F804CCB753ED839807DA5 /* Copy Pods Resources */ = {
+		CB0254907FEC1C1BAF3B4711 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PivotalTracker-PT_ReleaseNotes/Pods-PivotalTracker-PT_ReleaseNotes-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4D01B4679408FBEDA63E9B5D /* Copy Pods Resources */ = {
+		EF560C98FF5198A53263FF9F /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PT_ReleaseNotesTests/Pods-PT_ReleaseNotesTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		7B0C3EE39BAD6797BFEB808D /* Embed Pods Frameworks */ = {
+		F3241A0CAF3F419BBAA2DEE2 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B560703A3DCA5180FC1CB6B /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PT_ReleaseNotesTests/Pods-PT_ReleaseNotesTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F0E9A056ADEFDB3AF3CC2F33 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +609,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2B5060CE1CDAD72C00C8A2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B5060D91CDAD72C00C8A2BB /* main.m in Sources */,
+				2B5060D71CDAD72C00C8A2BB /* PivotTrackerXPC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		2B5802981C94DF3D008CED0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -498,6 +633,7 @@
 				2BC4442F1C964010008F0531 /* PTTimeZone.m in Sources */,
 				2BC4441E1C963236008F0531 /* PTLabel.m in Sources */,
 				2B2091961C9620BB0089B2E6 /* PTProject.m in Sources */,
+				2BF9136D1CE2582100C05D6E /* SCDMutableDictionary.m in Sources */,
 				2BC444271C963390008F0531 /* NSColor+PTColors.m in Sources */,
 				2B5802A11C94DF3E008CED0D /* AppDelegate.m in Sources */,
 				2B2091BA1C9621810089B2E6 /* PTUsers.m in Sources */,
@@ -537,6 +673,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		2B5060DC1CDAD72C00C8A2BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B5060D11CDAD72C00C8A2BB /* PivotTrackerXPC */;
+			targetProxy = 2B5060DB1CDAD72C00C8A2BB /* PBXContainerItemProxy */;
+		};
 		2B5802B41C94DF3E008CED0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2B58029B1C94DF3D008CED0D /* PT_ReleaseNotes */;
@@ -556,6 +697,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		2B5060DE1CDAD72D00C8A2BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D129DF3453432544CC83690 /* Pods-PivotalTracker-PivotTrackerXPC.debug.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PivotTrackerXPC/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scidsolutions.PivotTrackerXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		2B5060DF1CDAD72D00C8A2BB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 360CF7AB5431AE526D62FB24 /* Pods-PivotalTracker-PivotTrackerXPC.release.xcconfig */;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = PivotTrackerXPC/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.scidsolutions.PivotTrackerXPC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		2B5802B91C94DF3E008CED0D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -637,7 +802,7 @@
 		};
 		2B5802BC1C94DF3E008CED0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6BA61D57E9B6FE14093C535 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 307FE2AC246759A8587004D5 /* Pods-PivotalTracker-PT_ReleaseNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -684,7 +849,7 @@
 		};
 		2B5802BD1C94DF3E008CED0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58EF97CAD6EE3233A997B6D2 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 92C843ADDE260269481D3AC8 /* Pods-PivotalTracker-PT_ReleaseNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -731,7 +896,7 @@
 		};
 		2B5802BF1C94DF3E008CED0D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C17FB8F82B16D33296C08C5 /* Pods-PT_ReleaseNotesTests.debug.xcconfig */;
+			baseConfigurationReference = A2BB6A79BA5DEFC48C32921C /* Pods-PivotalTracker-PT_ReleaseNotesTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -747,7 +912,7 @@
 		};
 		2B5802C01C94DF3E008CED0D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 42E6932F0A8C31EA6CEEA2D1 /* Pods-PT_ReleaseNotesTests.release.xcconfig */;
+			baseConfigurationReference = 020392F9F77C3DADAED7A9CA /* Pods-PivotalTracker-PT_ReleaseNotesTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COMBINE_HIDPI_IMAGES = YES;
@@ -764,6 +929,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		2B5060E01CDAD72D00C8A2BB /* Build configuration list for PBXNativeTarget "PivotTrackerXPC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B5060DE1CDAD72D00C8A2BB /* Debug */,
+				2B5060DF1CDAD72D00C8A2BB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2B5802971C94DF3D008CED0D /* Build configuration list for PBXProject "PT_ReleaseNotes" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
