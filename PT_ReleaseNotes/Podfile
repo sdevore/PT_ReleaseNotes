@@ -1,26 +1,30 @@
 platform :osx, "10.9"
 
+abstract_target 'PivotalTracker' do
+    pod 'AFNetworking'
+    pod 'CocoaLumberjack'
+    pod "XCDLumberjackNSLogger", "~> 1.0.2"
+    pod "AFNetworkActivityLogger"
+    pod 'NSColor-Pantone'
+    pod 'NSColor-Crayola'
+    pod "DMTime", :git => 'https://github.com/sdevore/DMTime.git'
 
-pod 'AFNetworking'
-pod 'CocoaLumberjack'
-pod "XCDLumberjackNSLogger", "~> 1.0.2"
-pod "AFNetworkActivityLogger"
-pod 'NSLogger'
-pod 'SSKeychain'
-# pod 'Sparkle', '~> 1.10'
-# pod "HockeySDK-Mac"
-pod 'DevMateKit'
-# development only
+    target :PT_ReleaseNotes do
+        pod 'SSKeychain'
+        pod 'DevMateKit'
+        # development only
+        #help find ui freeze https://github.com/maxgordeev/MGWatchdog
+        pod "MGWatchdog"
 
-pod 'NSColor-Pantone'
-pod 'NSColor-Crayola'
+    end
 
-#help find ui freeze https://github.com/maxgordeev/MGWatchdog
-pod "MGWatchdog"
-pod "DMTime", :git => 'https://github.com/sdevore/DMTime.git'
+    target :PivotTrackerXPC do
+        
+        
+    end
 
+    target :PT_ReleaseNotesTests do
+        pod 'OHHTTPStubs'
 
-target :PT_ReleaseNotesTests, :exclusive => true do
-    pod 'OHHTTPStubs'
-
+    end
 end
