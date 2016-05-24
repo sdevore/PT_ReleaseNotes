@@ -36,6 +36,7 @@ PODS:
   - NSLogger (1.5.1):
     - NSLogger/Standard (= 1.5.1)
   - NSLogger/Standard (1.5.1)
+  - OCHamcrest (5.3.0)
   - OHHTTPStubs (5.0.0):
     - OHHTTPStubs/Default (= 5.0.0)
   - OHHTTPStubs/Core (5.0.0)
@@ -63,6 +64,7 @@ DEPENDENCIES:
   - MGWatchdog
   - NSColor-Crayola
   - NSColor-Pantone
+  - OCHamcrest (~> 5.0)
   - OHHTTPStubs
   - SSKeychain
   - XCDLumberjackNSLogger (~> 1.0.2)
@@ -86,10 +88,11 @@ SPEC CHECKSUMS:
   NSColor-Crayola: 02175a36c323c5c33e263e84f500f0634ee78282
   NSColor-Pantone: 4729b971b2e5ac452c9eeba1286b5982e1435180
   NSLogger: 5ed223a2436df96244e033be750656dacdeec034
+  OCHamcrest: 14696874144153e924a434742cbca38bdbbd4f25
   OHHTTPStubs: a5d2e9eea07869d42ec03338325f398bc520e159
   SSKeychain: c71293fa57216a40ab06c23f4085387583293de4
   XCDLumberjackNSLogger: 0226baa5148a2fa0d18731eee295fbf8f991f7ff
 
-PODFILE CHECKSUM: 901e3571bd42d25d67a51ed449e56c27b1eb72c9
+PODFILE CHECKSUM: 5c416040deaa1ec89f5d3a99ea1e4702ec6694a0
 
 COCOAPODS: 1.0.0
