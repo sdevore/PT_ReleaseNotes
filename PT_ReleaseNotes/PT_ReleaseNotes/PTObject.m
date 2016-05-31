@@ -9,5 +9,11 @@
 #import "PTObject.h"
 
 @implementation PTObject
-
+- (instancetype)init {
+  self = [super init];
+  if (self) {
+    _uuid = [[NSUUID UUID] UUIDString];
+  }
+  return self;
+}
 @end
