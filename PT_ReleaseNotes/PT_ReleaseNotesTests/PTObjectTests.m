@@ -5,8 +5,8 @@
 //  Created by Samuel DeVore on 5/25/16.
 //  Copyright © 2016 Samuel DeVore. All rights reserved.
 //
-
-#import "PTClasses.h"
+#import "PTAccount.h"
+#import "PTObject.h"
 #import <OCHamcrest/OCHamcrest.h>
 #import <XCTest/XCTest.h>
 @interface PTObjectTests : XCTestCase
