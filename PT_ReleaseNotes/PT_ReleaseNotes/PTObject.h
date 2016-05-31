@@ -6,8 +6,11 @@
 //  Copyright © 2016 Samuel DeVore. All rights reserved.
 //
 
+#import "PTTrackerXPC.h"
 #import <Foundation/Foundation.h>
 
-@interface PTObject : NSObject
+@interface PTObject : NSObject <PTTrackerXPCProtocol>
+
+@property(nonnull, strong) NSString *uuid;
 
 @end

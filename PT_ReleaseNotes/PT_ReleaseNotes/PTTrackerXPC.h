@@ -6,8 +6,19 @@
 //  Copyright © 2016 Samuel DeVore. All rights reserved.
 //
 
+#import "PivotTrackerXPCProtocol.h"
 #import <Foundation/Foundation.h>
 
-@interface PTTrackerXPC : NSObject
+@protocol PTTrackerXPCProtocol <NSObject>
+
+- (void)XPCSuccess:(id _Nullable)object;
+- (void)XPCFailure:(NSError *_Nullable)error;
+
+@optional
+- (BOOL)updateProgress:(double)currentProgress;
+- (void)finished;
+
+@end
+@interface PTTrackerXPC : NSObject <PivotTrackerXPCReturnProtocol>
 
 @end

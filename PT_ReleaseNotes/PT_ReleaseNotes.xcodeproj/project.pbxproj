@@ -29,6 +29,11 @@
 		2B2091B71C96216E0089B2E6 /* PTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B51C96216E0089B2E6 /* PTUser.m */; };
 		2B2091BA1C9621810089B2E6 /* PTUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B91C9621810089B2E6 /* PTUsers.m */; };
 		2B2091BB1C9621810089B2E6 /* PTUsers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2091B91C9621810089B2E6 /* PTUsers.m */; };
+		2B480E341CF63FAD00747EB1 /* PTTrackerXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B480E331CF63FAD00747EB1 /* PTTrackerXPC.m */; };
+		2B480E351CF63FAD00747EB1 /* PTTrackerXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B480E331CF63FAD00747EB1 /* PTTrackerXPC.m */; };
+		2B480E381CF6431E00747EB1 /* PTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B480E371CF6431E00747EB1 /* PTObject.m */; };
+		2B480E391CF6431E00747EB1 /* PTObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B480E371CF6431E00747EB1 /* PTObject.m */; };
+		2B480E3B1CF643EA00747EB1 /* PTObjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B480E3A1CF643EA00747EB1 /* PTObjectTests.m */; };
 		2B5060D71CDAD72C00C8A2BB /* PivotTrackerXPC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5060D61CDAD72C00C8A2BB /* PivotTrackerXPC.m */; };
 		2B5060D91CDAD72C00C8A2BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5060D81CDAD72C00C8A2BB /* main.m */; };
 		2B5060DD1CDAD72C00C8A2BB /* PivotTrackerXPC.xpc in Embed XPC Services */ = {isa = PBXBuildFile; fileRef = 2B5060D21CDAD72C00C8A2BB /* PivotTrackerXPC.xpc */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -38,6 +43,8 @@
 		2B5802A91C94DF3E008CED0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B5802A81C94DF3E008CED0D /* Assets.xcassets */; };
 		2B5802AC1C94DF3E008CED0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B5802AA1C94DF3E008CED0D /* Main.storyboard */; };
 		2B5802B71C94DF3E008CED0D /* PT_ReleaseNotesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5802B61C94DF3E008CED0D /* PT_ReleaseNotesTests.m */; };
+		2B70C75A1CF3F03800E11800 /* SCDURLQueryMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B70C7591CF3F03800E11800 /* SCDURLQueryMatcher.m */; };
+		2B70C75C1CF3F06200E11800 /* SCDURLQueryMatcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B70C75B1CF3F06200E11800 /* SCDURLQueryMatcherTests.m */; };
 		2BC4441A1C962DEB008F0531 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444191C962DEB008F0531 /* Constants.m */; };
 		2BC4441B1C962DEB008F0531 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC444191C962DEB008F0531 /* Constants.m */; };
 		2BC4441E1C963236008F0531 /* PTLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BC4441D1C963236008F0531 /* PTLabel.m */; };
@@ -93,7 +100,6 @@
 		2B20918C1C96123F0089B2E6 /* PTAccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTAccountTests.m; sourceTree = "<group>"; };
 		2B20918E1C961EE50089B2E6 /* ConfigurationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigurationController.h; path = "View Controllers/ConfigurationController.h"; sourceTree = "<group>"; };
 		2B20918F1C961EE50089B2E6 /* ConfigurationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigurationController.m; path = "View Controllers/ConfigurationController.m"; sourceTree = "<group>"; };
-		2B2091921C961FE50089B2E6 /* PTClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PTClasses.h; path = "PT Classes/PTClasses.h"; sourceTree = "<group>"; };
 		2B2091941C9620BB0089B2E6 /* PTProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTProject.h; path = "PT Classes/PTProject.h"; sourceTree = "<group>"; };
 		2B2091951C9620BB0089B2E6 /* PTProject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTProject.m; path = "PT Classes/PTProject.m"; sourceTree = "<group>"; };
 		2B20919C1C9620E70089B2E6 /* PTProjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTProjects.h; path = "PT Classes/PTProjects.h"; sourceTree = "<group>"; };
@@ -110,6 +116,11 @@
 		2B2091B51C96216E0089B2E6 /* PTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTUser.m; path = "PT Classes/PTUser.m"; sourceTree = "<group>"; };
 		2B2091B81C9621810089B2E6 /* PTUsers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTUsers.h; path = "PT Classes/PTUsers.h"; sourceTree = "<group>"; };
 		2B2091B91C9621810089B2E6 /* PTUsers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PTUsers.m; path = "PT Classes/PTUsers.m"; sourceTree = "<group>"; };
+		2B480E321CF63FAD00747EB1 /* PTTrackerXPC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTrackerXPC.h; sourceTree = "<group>"; };
+		2B480E331CF63FAD00747EB1 /* PTTrackerXPC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTTrackerXPC.m; sourceTree = "<group>"; };
+		2B480E361CF6431E00747EB1 /* PTObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTObject.h; sourceTree = "<group>"; };
+		2B480E371CF6431E00747EB1 /* PTObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTObject.m; sourceTree = "<group>"; };
+		2B480E3A1CF643EA00747EB1 /* PTObjectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PTObjectTests.m; sourceTree = "<group>"; };
 		2B5060D21CDAD72C00C8A2BB /* PivotTrackerXPC.xpc */ = {isa = PBXFileReference; explicitFileType = "wrapper.xpc-service"; includeInIndex = 0; path = PivotTrackerXPC.xpc; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B5060D41CDAD72C00C8A2BB /* PivotTrackerXPCProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PivotTrackerXPCProtocol.h; sourceTree = "<group>"; };
 		2B5060D51CDAD72C00C8A2BB /* PivotTrackerXPC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PivotTrackerXPC.h; sourceTree = "<group>"; };
@@ -134,6 +145,9 @@
 		2B5802C51C94E440008CED0D /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; name = .travis.yml; path = ../.travis.yml; sourceTree = "<group>"; };
 		2B5802C61C94E544008CED0D /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2B5802C71C94EBE7008CED0D /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = SOURCE_ROOT; };
+		2B70C7581CF3F03800E11800 /* SCDURLQueryMatcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCDURLQueryMatcher.h; sourceTree = "<group>"; };
+		2B70C7591CF3F03800E11800 /* SCDURLQueryMatcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDURLQueryMatcher.m; sourceTree = "<group>"; };
+		2B70C75B1CF3F06200E11800 /* SCDURLQueryMatcherTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCDURLQueryMatcherTests.m; sourceTree = "<group>"; };
 		2BC444181C962DEB008F0531 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		2BC444191C962DEB008F0531 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		2BC4441C1C963236008F0531 /* PTLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PTLabel.h; path = "PT Classes/PTLabel.h"; sourceTree = "<group>"; };
@@ -191,33 +205,36 @@
 		2B2091931C9620930089B2E6 /* PivotalTracker */ = {
 			isa = PBXGroup;
 			children = (
-				2BC4442D1C964010008F0531 /* PTTimeZone.h */,
-				2BC4442E1C964010008F0531 /* PTTimeZone.m */,
-				2BC444291C963F9D008F0531 /* PTPerson.h */,
-				2BC4442A1C963F9D008F0531 /* PTPerson.m */,
 				2B2091881C9612170089B2E6 /* PTAccount.h */,
 				2B2091891C9612170089B2E6 /* PTAccount.m */,
-				2B2091921C961FE50089B2E6 /* PTClasses.h */,
-				2B2091941C9620BB0089B2E6 /* PTProject.h */,
-				2B2091951C9620BB0089B2E6 /* PTProject.m */,
-				2B20919C1C9620E70089B2E6 /* PTProjects.h */,
-				2B20919D1C9620E70089B2E6 /* PTProjects.m */,
 				2B2091A41C9621130089B2E6 /* PTEpic.h */,
 				2B2091A51C9621130089B2E6 /* PTEpic.m */,
 				2B2091A81C96212C0089B2E6 /* PTEpics.h */,
 				2B2091A91C96212C0089B2E6 /* PTEpics.m */,
-				2B2091AC1C9621410089B2E6 /* PTStory.h */,
-				2B2091AD1C9621410089B2E6 /* PTStory.m */,
-				2B2091B01C9621520089B2E6 /* PTStories.h */,
-				2B2091B11C9621520089B2E6 /* PTStories.m */,
-				2B2091B41C96216E0089B2E6 /* PTUser.h */,
-				2B2091B51C96216E0089B2E6 /* PTUser.m */,
-				2B2091B81C9621810089B2E6 /* PTUsers.h */,
-				2B2091B91C9621810089B2E6 /* PTUsers.m */,
 				2BC4441C1C963236008F0531 /* PTLabel.h */,
 				2BC4441D1C963236008F0531 /* PTLabel.m */,
 				2BC444201C963256008F0531 /* PTLabels.h */,
 				2BC444211C963256008F0531 /* PTLabels.m */,
+				2B480E361CF6431E00747EB1 /* PTObject.h */,
+				2B480E371CF6431E00747EB1 /* PTObject.m */,
+				2BC444291C963F9D008F0531 /* PTPerson.h */,
+				2BC4442A1C963F9D008F0531 /* PTPerson.m */,
+				2B2091941C9620BB0089B2E6 /* PTProject.h */,
+				2B2091951C9620BB0089B2E6 /* PTProject.m */,
+				2B20919C1C9620E70089B2E6 /* PTProjects.h */,
+				2B20919D1C9620E70089B2E6 /* PTProjects.m */,
+				2B2091B01C9621520089B2E6 /* PTStories.h */,
+				2B2091B11C9621520089B2E6 /* PTStories.m */,
+				2B2091AC1C9621410089B2E6 /* PTStory.h */,
+				2B2091AD1C9621410089B2E6 /* PTStory.m */,
+				2BC4442D1C964010008F0531 /* PTTimeZone.h */,
+				2BC4442E1C964010008F0531 /* PTTimeZone.m */,
+				2B480E321CF63FAD00747EB1 /* PTTrackerXPC.h */,
+				2B480E331CF63FAD00747EB1 /* PTTrackerXPC.m */,
+				2B2091B41C96216E0089B2E6 /* PTUser.h */,
+				2B2091B51C96216E0089B2E6 /* PTUser.m */,
+				2B2091B81C9621810089B2E6 /* PTUsers.h */,
+				2B2091B91C9621810089B2E6 /* PTUsers.m */,
 			);
 			name = PivotalTracker;
 			sourceTree = "<group>";
@@ -294,6 +311,10 @@
 				2B5802B61C94DF3E008CED0D /* PT_ReleaseNotesTests.m */,
 				2B5802B81C94DF3E008CED0D /* Info.plist */,
 				2B20918C1C96123F0089B2E6 /* PTAccountTests.m */,
+				2B480E3A1CF643EA00747EB1 /* PTObjectTests.m */,
+				2B70C7581CF3F03800E11800 /* SCDURLQueryMatcher.h */,
+				2B70C7591CF3F03800E11800 /* SCDURLQueryMatcher.m */,
+				2B70C75B1CF3F06200E11800 /* SCDURLQueryMatcherTests.m */,
 			);
 			path = PT_ReleaseNotesTests;
 			sourceTree = "<group>";
@@ -633,10 +654,12 @@
 				2BC4442F1C964010008F0531 /* PTTimeZone.m in Sources */,
 				2BC4441E1C963236008F0531 /* PTLabel.m in Sources */,
 				2B2091961C9620BB0089B2E6 /* PTProject.m in Sources */,
+				2B480E341CF63FAD00747EB1 /* PTTrackerXPC.m in Sources */,
 				2BF9136D1CE2582100C05D6E /* SCDMutableDictionary.m in Sources */,
 				2BC444271C963390008F0531 /* NSColor+PTColors.m in Sources */,
 				2B5802A11C94DF3E008CED0D /* AppDelegate.m in Sources */,
 				2B2091BA1C9621810089B2E6 /* PTUsers.m in Sources */,
+				2B480E381CF6431E00747EB1 /* PTObject.m in Sources */,
 				2B20918A1C9612170089B2E6 /* PTAccount.m in Sources */,
 				2BC444221C963256008F0531 /* PTLabels.m in Sources */,
 				2B20919E1C9620E70089B2E6 /* PTProjects.m in Sources */,
@@ -657,11 +680,16 @@
 				2B2091971C9620BB0089B2E6 /* PTProject.m in Sources */,
 				2B5802B71C94DF3E008CED0D /* PT_ReleaseNotesTests.m in Sources */,
 				2B2091AB1C96212C0089B2E6 /* PTEpics.m in Sources */,
+				2B70C75A1CF3F03800E11800 /* SCDURLQueryMatcher.m in Sources */,
 				2BC4441B1C962DEB008F0531 /* Constants.m in Sources */,
 				2BC444231C963256008F0531 /* PTLabels.m in Sources */,
+				2B480E351CF63FAD00747EB1 /* PTTrackerXPC.m in Sources */,
 				2BC4442C1C963F9D008F0531 /* PTPerson.m in Sources */,
 				2BC4441F1C963236008F0531 /* PTLabel.m in Sources */,
 				2B20919F1C9620E70089B2E6 /* PTProjects.m in Sources */,
+				2B480E3B1CF643EA00747EB1 /* PTObjectTests.m in Sources */,
+				2B70C75C1CF3F06200E11800 /* SCDURLQueryMatcherTests.m in Sources */,
+				2B480E391CF6431E00747EB1 /* PTObject.m in Sources */,
 				2B20918D1C96123F0089B2E6 /* PTAccountTests.m in Sources */,
 				2B2091B71C96216E0089B2E6 /* PTUser.m in Sources */,
 				2B2091BB1C9621810089B2E6 /* PTUsers.m in Sources */,
