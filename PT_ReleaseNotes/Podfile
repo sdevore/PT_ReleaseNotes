@@ -12,15 +12,10 @@ abstract_target 'PivotalTracker' do
     target :PT_ReleaseNotes do
         pod 'SSKeychain'
         pod 'DevMateKit'
-        # development only
-        #help find ui freeze https://github.com/maxgordeev/MGWatchdog
-        pod 'MRWatchdog'
-
     end
 
     target :PivotTrackerXPC do
-        
-        
+                
     end
 
     target :PT_ReleaseNotesTests do
