@@ -9,5 +9,8 @@
 #import <OCHamcrest/OCHamcrest.h>
 
 @interface SCDURLQueryMatcher : HCDiagnosingMatcher
-
+- (instancetype)initWithName:(NSString *)name
+                valueMatcher:(id<HCMatcher>)valueMatcher;
 @end
+
+FOUNDATION_EXPORT id hasQuery(NSString *name, id valueMatcher);
